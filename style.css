@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Patrick Hand', cursive; */
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    /* color: white; */
+}
+
+/* ------ ELEMENT STYLE ------ */
+a {
+   color: white;
+   background-color: transparent;  
+}
+img {
+    border-style: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.color-highlight{
+    color: #1B2B46;
+    font-weight: 700;
+}
+/* ------ ELEMENT STYLE ------ */
+
+
+
+/* All content */
+
+.main-header {
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    background: url(./Photos/mainBG.jpg) no-repeat center; 
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav-item{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: transparent solid 0.5px;
+    transition: border ease-in 0.2s;
+    /* transition: border-radius ease-in 0.2s; */
+}
+.nav-item:hover{
+    border: white solid 0.5px;
+    
+}
+
+/* Main content h1, p, span */
+.main-content{
+    margin-top: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main-title{
+    font-size: 52px;
+}
+.main-subtitle{
+    max-width: 500px; 
+}
+
+
+/* --------------------------- SECTION ABOUT FINLAND --------------------------- */
+
+.section-about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* flex-wrap: wrap-reverse; */
+}
+.about-list{
+    list-style: disc;
+    margin-left: 15px;
+}
+.about-img{
+    height: 60%;
+    width: 70%;
+    border-radius: 10px;
+}
+.about-content{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-addInfo{
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+/* SECTION ABOUT 2 */
+
+.section-about-2{
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    background: url(./Photos/aboutBG.jpg) no-repeat center; 
+    background-size: cover;
+}
+.about-2-container{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.about-2-title{
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
+}
+.about-2-content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.g{
+    width: 250px;
+    height: 320px;
+    border-radius: 10px 10px 0px 0px;
+}
+.about-2-item-nt1{
+    flex-grow: 0;
+    flex-shrink: 1; 
+    background: url(./Photos/boatLake.jpg) no-repeat center; 
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    min-width: 250px;
+    min-height: 320px;
+}
+.about-2-item-nt2{
+    background: url(./Photos/city.png) no-repeat center; 
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    min-width: 250px;
+    min-height: 320px;
+}
+.about-2-item-nt3{
+    background: url(./Photos/streetView.png) no-repeat center; 
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    min-width: 250px;
+    min-height: 320px;
+}
+.about-2-text{
+    width: 80%;
+}
+.about-2-item-description{
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* -------------------- SECTION FINLAND HISTORY */
+.section-history{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.history-line{
+    border-left: 6px #1B2B46 solid;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
+}
+.history-subtitle{
+    max-width: 350px;
+    margin-left: 10px;
+} 
+.history-container-ancient{
+    width: 358px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.history-addInfo{
+    font-family: 'Patrick Hand', cursive;
+}
+.history-column{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 300px;
+}
+
+
+/* HISTORY COLUMN 2 */
+.history-column-2{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.history-img-castle{
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.history-column-2-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 400px;
+}
+.history-img-muminek{
+    /* max-width: 30%; */
+    border-radius: 10px;
+}
+
+/* ----------------------- SECTION EDUCATION */
+
+.section-edu{
+    margin-top: 150px;
+    height: 100vh;
+    background: url(./Photos/eduBG.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+}
+.edu-subtitle{
+    text-align: center;
+}
+.edu{
+    margin-top: 150px;
+}
+
+
+footer{
+    margin-top: 150px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1B2B46;
+}
+footer span{
+    font-size: 32px;
+    color: white;
+}
